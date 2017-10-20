@@ -1329,7 +1329,7 @@ table.payments td.label {
 
 		{% if Sale.Shop.ReceiptSetup.logo|strlen > 0 and not logo_printed %}
 			<img src="{{Sale.Shop.ReceiptSetup.logo}}" width="{{ options.logo_width }}" height="{{ options.logo_height }}" class="logo">
-			{% if show_shop_name_with_logo %}
+			{% if options.show_shop_name_with_logo %}
 				<h3 class="receiptShopName">{{ Sale.Shop.name }}</h3>
 			{% endif %}
 		{% else %}
